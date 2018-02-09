@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Gesturizer {
+public class Gesturizer {
     // MARK: Constants
     
     static let DEFAULT_TOUCH_PRESSURE = 0.8
@@ -35,7 +35,7 @@ class Gesturizer {
     var forceTouch = false
     
     // MARK: Constructors
-    init (view: UIImageView) {
+    public init (view: UIImageView) {
         self.view = view
         self.dollar = Dollar() // Initialize 1$
     }
