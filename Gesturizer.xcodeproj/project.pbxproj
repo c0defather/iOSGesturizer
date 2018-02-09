@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6A8B2A48202D19E0009A1DC2 /* Gesturizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8B2A3E202D19E0009A1DC2 /* Gesturizer.framework */; };
 		6A8B2A4D202D19E0009A1DC2 /* GesturizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A4C202D19E0009A1DC2 /* GesturizerTests.swift */; };
-		6A8B2A5B202D1A4E009A1DC2 /* Gesturizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A5A202D1A4E009A1DC2 /* Gesturizer.swift */; };
+		6A8B2A5B202D1A4E009A1DC2 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A5A202D1A4E009A1DC2 /* GestureView.swift */; };
 		6A8B2A64202D1A9A009A1DC2 /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A5C202D1A9A009A1DC2 /* Dollar.swift */; };
 		6A8B2A65202D1A9A009A1DC2 /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A5D202D1A9A009A1DC2 /* Trigonometric.swift */; };
 		6A8B2A66202D1A9A009A1DC2 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A8B2A5E202D1A9A009A1DC2 /* Utils.swift */; };
@@ -36,7 +36,7 @@
 		6A8B2A47202D19E0009A1DC2 /* GesturizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GesturizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A8B2A4C202D19E0009A1DC2 /* GesturizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturizerTests.swift; sourceTree = "<group>"; };
 		6A8B2A4E202D19E0009A1DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A8B2A5A202D1A4E009A1DC2 /* Gesturizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gesturizer.swift; sourceTree = "<group>"; };
+		6A8B2A5A202D1A4E009A1DC2 /* GestureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 		6A8B2A5C202D1A9A009A1DC2 /* Dollar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
 		6A8B2A5D202D1A9A009A1DC2 /* Trigonometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
 		6A8B2A5E202D1A9A009A1DC2 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				6A8B2A59202D19FC009A1DC2 /* GestureRecognizer */,
-				6A8B2A5A202D1A4E009A1DC2 /* Gesturizer.swift */,
+				6A8B2A5A202D1A4E009A1DC2 /* GestureView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 			files = (
 				6A8B2A65202D1A9A009A1DC2 /* Trigonometric.swift in Sources */,
 				6A8B2A67202D1A9A009A1DC2 /* Result.swift in Sources */,
-				6A8B2A5B202D1A4E009A1DC2 /* Gesturizer.swift in Sources */,
+				6A8B2A5B202D1A4E009A1DC2 /* GestureView.swift in Sources */,
 				6A8B2A6B202D1A9A009A1DC2 /* Rectangle.swift in Sources */,
 				6A8B2A6A202D1A9A009A1DC2 /* TemplateData.swift in Sources */,
 				6A8B2A68202D1A9A009A1DC2 /* Recognizer.swift in Sources */,
