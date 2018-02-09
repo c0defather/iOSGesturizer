@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class Gesturizer {
+public class GestureView: UIImageView {
     // MARK: Constants
     
     static let DEFAULT_TOUCH_PRESSURE = 0.8
@@ -22,10 +22,9 @@ public class Gesturizer {
     
     // MARK: Properties
     
-    var view: UIImageView!
     var brushSize: CGFloat = DEFAULT_BRUSH_SIZE
     var colors: [UIColor] = DEFAULT_COLORS
-    var dollar: Dollar!
+    var dollar = Dollar()
     
     var lastPoint = CGPoint.zero // Last point touched
     var lastDrawedPoint = CGPoint.zero // Last point drawed
@@ -35,21 +34,21 @@ public class Gesturizer {
     var forceTouch = false
     
     // MARK: Constructors
-    public init (view: UIImageView) {
-        self.view = view
-        self.dollar = Dollar() // Initialize 1$
-    }
+//    public init (view: UIImageView) {
+//        self.view = view
+//        self.dollar = Dollar() // Initialize 1$
+//    }
     
     // MARK: Methods
-    func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first { // If touches just began
-            lastPoint = touch.location(in: self.view)
+            lastPoint = touch.location(in: self)
         }
     }
     
-    func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
-            let currentPoint = touch.location(in: self.view)
+            let currentPoint = touch.location(in: self)
             if (touch.force/touch.maximumPossibleForce > 0.5 || userPathForce.count > 2){
                 if (!forceTouch) {
                     userPathForce.removeAll()
@@ -63,7 +62,7 @@ public class Gesturizer {
                 }
                 
                 if (dollar.points.count > 2){
-                    self.view.image = nil
+                    self.image = nil
                     let results = dollar.predict()
                     if (results.count > 0) {
                         for i in 0...results.count-1{
@@ -78,7 +77,7 @@ public class Gesturizer {
                 userPathForce.append(currentPoint)
             }else{
                 forceTouch = false
-                self.view.image = nil
+                self.image = nil
                 lastPoint = CGPoint.zero
                 lastDrawedPoint = CGPoint.zero
                 lastPointForce = CGPoint.zero
@@ -86,8 +85,8 @@ public class Gesturizer {
             lastPoint = currentPoint
         }
     }
-    func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.image = nil
+    override public func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.image = nil
         dollar.recognize()
         let res = dollar.result
         if (res.Score as Double! > 0.8) {
@@ -97,14 +96,13 @@ public class Gesturizer {
         }
         userPathForce.removeAll()
         dollar.clear()
-        
         lastPoint = CGPoint.zero
         lastDrawedPoint = CGPoint.zero
         lastPointForce = CGPoint.zero
     }
     func drawPoints(_ points: [CGPoint], color: UIColor, strokeSize: CGFloat){
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        self.view.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        UIGraphicsBeginImageContext(self.frame.size)
+        self.image?.draw(in: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         let context = UIGraphicsGetCurrentContext()
         let deltaX = points[0].x - lastPointForce.x
         let deltaY = points[0].y - lastPointForce.y
@@ -142,14 +140,14 @@ public class Gesturizer {
         
         context?.strokePath()
         
-        self.view.image = UIGraphicsGetImageFromCurrentImageContext()
+        self.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
     }
     
     func drawLines(_ fromPoint:CGPoint,toPoint:CGPoint, color: UIColor) {
-        UIGraphicsBeginImageContext(self.view.frame.size)
-        self.view.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        UIGraphicsBeginImageContext(self.frame.size)
+        self.image?.draw(in: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         let context = UIGraphicsGetCurrentContext()
         
         context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
@@ -162,7 +160,7 @@ public class Gesturizer {
         
         context?.strokePath()
         
-        self.view.image = UIGraphicsGetImageFromCurrentImageContext()
+        self.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
 }
