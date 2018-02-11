@@ -33,13 +33,13 @@ The simplest way to use iOSGesturizer with your application is to add iOSGesturi
 ## Usage
 
 In AppDelegate class add the following line:
-'''
+```
 var window: UIWindow? = GesturizerWindow()
-'''
+```
 
 Also, in your main View Controller add the following lines:
 
-'''
+```
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     let window = UIApplication.shared.keyWindow! as! GesturizerWindow
@@ -53,7 +53,7 @@ override func viewDidAppear(_ animated: Bool) {
     window.setGestureView(view: view)
     window.addSubview(view)
 }
-'''
+```
 
 ## Customization
 
