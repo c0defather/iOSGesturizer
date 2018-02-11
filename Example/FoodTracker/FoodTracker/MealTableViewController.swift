@@ -34,9 +34,13 @@ class MealTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         let gidow = UIApplication.shared.keyWindow! as! GesturizerWindow
-        let h = UIScreen.main.bounds.height
-        let w = UIScreen.main.bounds.width
-        let giew = GesturizerView(frame: CGRect(x: 0, y: 0, width: w, height: h))
+        let giew = GesturizerView()
+        giew.gestureHandler = {index in
+            let alert = UIAlertView()
+            alert.message = "Gesture Index: \(index)"
+            alert.addButton(withTitle: "Ok")
+            alert.show()
+        }
         gidow.setGestureView(view: giew)
         gidow.addSubview(giew)
     }

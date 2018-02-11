@@ -21,7 +21,9 @@ public class GesturizerView: UIImageView {
     ]
     
     // MARK: Properties
-    
+    public var gestureHandler: (_ index: Int) -> () = {_ in
+        print(index)
+    }
     var brushSize: CGFloat = DEFAULT_BRUSH_SIZE
     var colors: [UIColor] = DEFAULT_COLORS
     var dollar = Dollar()
@@ -32,6 +34,16 @@ public class GesturizerView: UIImageView {
     
     var userPathForce = [CGPoint]() // Touch path with force
     var forceTouch = false
+    
+    // MARK: Constructors
+    
+    public init() {
+        super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     // MARK: Methods
     func touchesBegan(_ touches: Set<UITouch>) {
@@ -85,7 +97,7 @@ public class GesturizerView: UIImageView {
         dollar.recognize()
         let res = dollar.result
         if (res.Score as Double! > 0.8) {
-            
+            self.gestureHandler(res.Index)
         } else {
             
         }
