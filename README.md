@@ -15,7 +15,7 @@ Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke ge
 
 ## Demo Project
 
-Build and run the <i>FoodTrack</i> project in Xcode. The demo provided by Apple demonstrates the simple usage of iOSGesturizers.
+Build and run the <i>FoodTrack</i> project in Xcode. Basically, we took an app provided in Apple's tutorials and applied iOSGesturizer to it.
 
 ## Installation
 
@@ -31,6 +31,29 @@ Simply add the following line to your <code>Podfile</code>:
 The simplest way to use iOSGesturizer with your application is to add iOSGesturizer folder as a framework in Builds Settings in your XCode project.
 
 ## Usage
+
+In AppDelegate class add the following line:
+'''
+var window: UIWindow? = GesturizerWindow()
+'''
+
+Also, in your main View Controller add the following lines:
+
+'''
+override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    let window = UIApplication.shared.keyWindow! as! GesturizerWindow
+    let view = GesturizerView()
+    view.gestureHandler = {index in
+        let alert = UIAlertView()
+        alert.message = "Gesture Index: \(index)"
+        alert.addButton(withTitle: "Ok")
+        alert.show()
+    }
+    window.setGestureView(view: view)
+    window.addSubview(view)
+}
+'''
 
 ## Customization
 
