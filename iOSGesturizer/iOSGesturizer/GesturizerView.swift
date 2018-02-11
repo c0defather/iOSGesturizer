@@ -11,6 +11,7 @@ import UIKit
 public class GesturizerView: UIImageView {
     // MARK: Constants
     
+    static let TRAINING_MODE_ACTIVATION_TIME = 1.0
     static let DEFAULT_TOUCH_PRESSURE = 0.8
     static let DEFAULT_BRUSH_SIZE: CGFloat = 2.0
     static let DEFAULT_OPACITY: CGFloat = 1.0
@@ -27,18 +28,20 @@ public class GesturizerView: UIImageView {
     var brushSize: CGFloat = DEFAULT_BRUSH_SIZE
     var colors: [UIColor] = DEFAULT_COLORS
     var dollar = Dollar()
+    var timer = Timer()
+    var time = 0.0
     
     var lastPoint = CGPoint.zero // Last point touched
-    var lastDrawedPoint = CGPoint.zero // Last point drawed
     var lastPointForce = CGPoint.zero // First point touched with force
     
     var userPathForce = [CGPoint]() // Touch path with force
     var forceTouch = false
     
     // MARK: Constructors
-    
+   
     public init() {
         super.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height))
+        timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(runTimedCode), userInfo: nil, repeats: true)
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -55,12 +58,13 @@ public class GesturizerView: UIImageView {
     func touchesMoved(_ touches: Set<UITouch>) {
         if let touch = touches.first {
             let currentPoint = touch.location(in: self)
-            if (touch.force/touch.maximumPossibleForce > 0.5 || userPathForce.count > 2){
+            if (touch.force/touch.maximumPossibleForce > 0.5 || userPathForce.count > 0){
                 if (!forceTouch) {
                     userPathForce.removeAll()
                     dollar.clear()
                     forceTouch = true
-                    
+                    let generator = UIImpactFeedbackGenerator(style: .medium)
+                    generator.impactOccurred()
                 }
                 dollar.addPoint(x: Int(currentPoint.x), y: Int(currentPoint.y))
                 if (lastPointForce == CGPoint.zero){
@@ -75,18 +79,18 @@ public class GesturizerView: UIImageView {
                             let res = results[i]
                             let curColor = colors[res.Index]
                             let points = dollar.recognizer.RawTemplates[res.Index]
-                            drawPoints(points,color:curColor, strokeSize: self.brushSize*CGFloat(res.Score)*CGFloat(res.Score)*CGFloat(2)*CGFloat(5-results.count))
+                            print (time)
+                            if (time > GesturizerView.TRAINING_MODE_ACTIVATION_TIME) {
+                                drawPoints(points,color:curColor, strokeSize: self.brushSize*CGFloat(res.Score)*CGFloat(res.Score)*CGFloat(2)*CGFloat(5-results.count))
+                            }
                         }
-                        lastDrawedPoint = currentPoint
                     }
                 }
                 userPathForce.append(currentPoint)
             }else{
                 forceTouch = false
-                
                 self.image = nil
                 lastPoint = CGPoint.zero
-                lastDrawedPoint = CGPoint.zero
                 lastPointForce = CGPoint.zero
             }
             lastPoint = currentPoint
@@ -104,7 +108,6 @@ public class GesturizerView: UIImageView {
         userPathForce.removeAll()
         dollar.clear()
         lastPoint = CGPoint.zero
-        lastDrawedPoint = CGPoint.zero
         lastPointForce = CGPoint.zero
     }
     func drawPoints(_ points: [CGPoint], color: UIColor, strokeSize: CGFloat){
@@ -169,6 +172,14 @@ public class GesturizerView: UIImageView {
         
         self.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
+    }
+    
+    @objc public func runTimedCode() {
+        if (forceTouch) {
+            time += 0.01
+        } else {
+            time = 0.0
+        }
     }
 }
 

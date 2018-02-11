@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A7B387B202FB27E00BBF486 /* iOSGesturizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A7B3879202FB27E00BBF486 /* iOSGesturizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A7B3882202FB2E700BBF486 /* GesturizerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B3881202FB2E700BBF486 /* GesturizerWindow.swift */; };
 		6A7B3885202FB33F00BBF486 /* GesturizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B3884202FB33F00BBF486 /* GesturizerView.swift */; };
 		6A7B388E202FB36200BBF486 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B3886202FB36200BBF486 /* Rectangle.swift */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		6A7B3876202FB27E00BBF486 /* iOSGesturizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSGesturizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A7B3879202FB27E00BBF486 /* iOSGesturizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSGesturizer.h; sourceTree = "<group>"; };
 		6A7B387A202FB27E00BBF486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A7B3881202FB2E700BBF486 /* GesturizerWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturizerWindow.swift; sourceTree = "<group>"; };
 		6A7B3884202FB33F00BBF486 /* GesturizerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturizerView.swift; sourceTree = "<group>"; };
@@ -68,7 +66,6 @@
 			children = (
 				6A7B3883202FB2EB00BBF486 /* GestureRecognizer */,
 				6A7B3884202FB33F00BBF486 /* GesturizerView.swift */,
-				6A7B3879202FB27E00BBF486 /* iOSGesturizer.h */,
 				6A7B387A202FB27E00BBF486 /* Info.plist */,
 				6A7B3881202FB2E700BBF486 /* GesturizerWindow.swift */,
 			);
@@ -97,7 +94,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A7B387B202FB27E00BBF486 /* iOSGesturizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

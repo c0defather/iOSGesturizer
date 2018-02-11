@@ -33,6 +33,7 @@ class MealTableViewController: UITableViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         let gidow = UIApplication.shared.keyWindow! as! GesturizerWindow
         let giew = GesturizerView()
         giew.gestureHandler = {index in
