@@ -1,7 +1,7 @@
 # iOSGesturizer
 Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke gesture interaction for any apps running on iOS devices with 3D-touch.
 
-<a href="http://cs.ecs.baylor.edu/~zhunussov/gesurizer.gif"><img src="http://cs.ecs.baylor.edu/~zhunussov/demo5.gif" alt="iOSGesturizer" border="0" /></a>
+<a href="http://cs.ecs.baylor.edu/~zhunussov/gesturizer.gif"><img src="http://cs.ecs.baylor.edu/~zhunussov/gesturizer_small.gif" alt="iOSGesturizer" border="0" /></a>
 
 ## Features
 
