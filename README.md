@@ -1,5 +1,4 @@
 # iOSGesturizer
-# JBChartView
 Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke gesture interaction for any apps running on iOS devices with 3D-touch.
 
 ## Features
@@ -20,8 +19,6 @@ Build and run the <i>FoodTrack</i> project in Xcode. The demo provided by Apple 
 
 ## Installation
 
-<a href="http://cocoapods.org/" target="_blank">CocoaPods</a> is the recommended method of installing iOSGesturizer.
-
 ### The Pod Way
 
 Simply add the following line to your <code>Podfile</code>:
@@ -32,10 +29,6 @@ Simply add the following line to your <code>Podfile</code>:
 ### The Old School Way
 
 The simplest way to use iOSGesturizer with your application is to add iOSGesturizer folder as a framework in Builds Settings in your XCode project.
-
-<center>
-	<img src="https://raw.github.com/Jawbone/JBChartView/master/Screenshots/installation.png">
-</center>
 
 ## Usage
 
