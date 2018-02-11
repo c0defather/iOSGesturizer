@@ -45,10 +45,8 @@ override func viewDidAppear(_ animated: Bool) {
     let window = UIApplication.shared.keyWindow! as! GesturizerWindow
     let view = GesturizerView()
     view.gestureHandler = {index in
-        let alert = UIAlertView()
-        alert.message = "Gesture Index: \(index)"
-        alert.addButton(withTitle: "Ok")
-        alert.show()
+        // index is the index of a gesture that was recognizer
+	// do whatever you need
     }
     window.setGestureView(view: view)
     window.addSubview(view)
