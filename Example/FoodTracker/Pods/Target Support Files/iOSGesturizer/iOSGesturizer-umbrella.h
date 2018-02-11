@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "iOSGesturizer.h"
 
 FOUNDATION_EXPORT double iOSGesturizerVersionNumber;
 FOUNDATION_EXPORT const unsigned char iOSGesturizerVersionString[];

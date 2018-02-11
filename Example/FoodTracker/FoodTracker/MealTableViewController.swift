@@ -34,16 +34,16 @@ class MealTableViewController: UITableViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        let gidow = UIApplication.shared.keyWindow! as! GesturizerWindow
-        let giew = GesturizerView()
-        giew.gestureHandler = {index in
+        let window = UIApplication.shared.keyWindow! as! GesturizerWindow
+        let view = GesturizerView()
+        view.gestureHandler = {index in
             let alert = UIAlertView()
-            alert.message = "Gesture Index: \(index)"
+            alert.message = view.names[index] // print gesture name
             alert.addButton(withTitle: "Ok")
             alert.show()
         }
-        gidow.setGestureView(view: giew)
-        gidow.addSubview(giew)
+        window.setGestureView(view: view)
+        window.addSubview(view)
     }
 
     override func didReceiveMemoryWarning() {

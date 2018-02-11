@@ -13,7 +13,7 @@ public class GesturizerView: UIImageView {
     
     static let TRAINING_MODE_ACTIVATION_TIME = 1.0
     static let DEFAULT_TOUCH_PRESSURE = 0.8
-    static let DEFAULT_BRUSH_SIZE: CGFloat = 2.0
+    static let DEFAULT_BRUSH_SIZE: CGFloat = 10.0
     static let DEFAULT_OPACITY: CGFloat = 1.0
     static let DEFAULT_COLORS = [
         UIColor(red: 186.0/255, green: 34.0/255, blue: 34.0/255, alpha: 1.0),
@@ -28,6 +28,7 @@ public class GesturizerView: UIImageView {
     var brushSize: CGFloat = DEFAULT_BRUSH_SIZE
     var colors: [UIColor] = DEFAULT_COLORS
     var dollar = Dollar()
+    public var names: [String] = ["Cut", "Copy", "Paste"]
     var timer = Timer()
     var time = 0.0
     
@@ -49,6 +50,7 @@ public class GesturizerView: UIImageView {
     }
     
     // MARK: Methods
+    
     func touchesBegan(_ touches: Set<UITouch>) {
         if let touch = touches.first { // If touches just began
             lastPoint = touch.location(in: self)
@@ -56,6 +58,7 @@ public class GesturizerView: UIImageView {
     }
     
     func touchesMoved(_ touches: Set<UITouch>) {
+        
         if let touch = touches.first {
             let currentPoint = touch.location(in: self)
             if (touch.force/touch.maximumPossibleForce > 0.5 || userPathForce.count > 0){
@@ -73,15 +76,17 @@ public class GesturizerView: UIImageView {
                 
                 if (dollar.points.count > 1){
                     self.image = nil
+                    for view in self.subviews{
+                        view.removeFromSuperview()
+                    }
                     let results = dollar.predict()
                     if (results.count > 0) {
                         for i in 0...results.count-1{
                             let res = results[i]
                             let curColor = colors[res.Index]
                             let points = dollar.recognizer.RawTemplates[res.Index]
-                            print (time)
                             if (time > GesturizerView.TRAINING_MODE_ACTIVATION_TIME) {
-                                drawPoints(points,color:curColor, strokeSize: self.brushSize*CGFloat(res.Score)*CGFloat(res.Score)*CGFloat(2)*CGFloat(5-results.count))
+                                drawPoints(points, text: names[res.Index], color:curColor, strokeSize: self.brushSize*CGFloat(res.Score)*CGFloat(res.Score))
                             }
                         }
                     }
@@ -98,6 +103,9 @@ public class GesturizerView: UIImageView {
     }
     func touchesEnded(_ touches: Set<UITouch>) {
         self.image = nil
+        for view in self.subviews{
+            view.removeFromSuperview()
+        }
         dollar.recognize()
         let res = dollar.result
         if (res.Score as Double! > 0.8) {
@@ -110,7 +118,7 @@ public class GesturizerView: UIImageView {
         lastPoint = CGPoint.zero
         lastPointForce = CGPoint.zero
     }
-    func drawPoints(_ points: [CGPoint], color: UIColor, strokeSize: CGFloat){
+    func drawPoints(_ points: [CGPoint], text: String, color: UIColor, strokeSize: CGFloat){
         UIGraphicsBeginImageContext(self.frame.size)
         self.image?.draw(in: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
         let context = UIGraphicsGetCurrentContext()
@@ -147,31 +155,22 @@ public class GesturizerView: UIImageView {
         context?.setLineCap(CGLineCap.round)
         context?.setLineWidth(strokeSize)
         context?.setStrokeColor(color.cgColor)
-        
         context?.strokePath()
         
         self.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-    }
-    
-    func drawLines(_ fromPoint:CGPoint,toPoint:CGPoint, color: UIColor) {
-        UIGraphicsBeginImageContext(self.frame.size)
-        self.image?.draw(in: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height))
-        let context = UIGraphicsGetCurrentContext()
-        
-        context?.move(to: CGPoint(x: fromPoint.x, y: fromPoint.y))
-        context?.addLine(to: CGPoint(x: toPoint.x, y: toPoint.y))
-        
-        context?.setBlendMode(CGBlendMode.normal)
-        context?.setLineCap(CGLineCap.round)
-        context?.setLineWidth(brushSize)
-        context?.setStrokeColor(color.cgColor)
-        
-        context?.strokePath()
-        
-        self.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
+        let last = points.last!
+        let label = UILabel(frame:CGRect(origin: CGPoint(x: last.x-deltaX-25,y :last.y-deltaY-10), size: CGSize(width: 50, height: 20)))
+        label.text = text
+        label.font = UIFont.systemFont(ofSize: 14.0)
+        label.layer.borderWidth = 2.0
+        label.layer.backgroundColor = UIColor.white.cgColor
+        label.layer.cornerRadius = 5.0
+        label.layer.borderColor = color.cgColor
+        label.textColor = color
+        label.textAlignment = NSTextAlignment.center
+        self.addSubview(label)
     }
     
     @objc public func runTimedCode() {
@@ -179,28 +178,6 @@ public class GesturizerView: UIImageView {
             time += 0.01
         } else {
             time = 0.0
-        }
-    }
-}
-
-extension UIColor {
-    func lighter(by percentage:CGFloat=30.0) -> UIColor? {
-        return self.adjust(by: abs(percentage) )
-    }
-    
-    func darker(by percentage:CGFloat=30.0) -> UIColor? {
-        return self.adjust(by: -1 * abs(percentage) )
-    }
-    
-    func adjust(by percentage:CGFloat=30.0) -> UIColor? {
-        var r:CGFloat=0, g:CGFloat=0, b:CGFloat=0, a:CGFloat=0;
-        if(self.getRed(&r, green: &g, blue: &b, alpha: &a)){
-            return UIColor(red: min(r + percentage/100, 1.0),
-                           green: min(g + percentage/100, 1.0),
-                           blue: min(b + percentage/100, 1.0),
-                           alpha: a)
-        }else{
-            return nil
         }
     }
 }

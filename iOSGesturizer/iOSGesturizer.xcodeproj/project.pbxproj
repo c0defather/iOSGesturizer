@@ -17,6 +17,7 @@
 		6A7B3893202FB36200BBF486 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B388B202FB36200BBF486 /* Utils.swift */; };
 		6A7B3894202FB36200BBF486 /* TemplateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B388C202FB36200BBF486 /* TemplateData.swift */; };
 		6A7B3895202FB36200BBF486 /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B388D202FB36200BBF486 /* Trigonometric.swift */; };
+		6A7B38B62030206B00BBF486 /* GesturizerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7B38B52030206B00BBF486 /* GesturizerUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6A7B388B202FB36200BBF486 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		6A7B388C202FB36200BBF486 /* TemplateData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemplateData.swift; sourceTree = "<group>"; };
 		6A7B388D202FB36200BBF486 /* Trigonometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
+		6A7B38B52030206B00BBF486 /* GesturizerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturizerUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				6A7B3884202FB33F00BBF486 /* GesturizerView.swift */,
 				6A7B387A202FB27E00BBF486 /* Info.plist */,
 				6A7B3881202FB2E700BBF486 /* GesturizerWindow.swift */,
+				6A7B38B52030206B00BBF486 /* GesturizerUtils.swift */,
 			);
 			path = iOSGesturizer;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A7B3894202FB36200BBF486 /* TemplateData.swift in Sources */,
+				6A7B38B62030206B00BBF486 /* GesturizerUtils.swift in Sources */,
 				6A7B3890202FB36200BBF486 /* Template.swift in Sources */,
 				6A7B3895202FB36200BBF486 /* Trigonometric.swift in Sources */,
 				6A7B3891202FB36200BBF486 /* Dollar.swift in Sources */,
