@@ -1,7 +1,7 @@
 # iOSGesturizer
 Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke gesture interaction for any apps running on iOS devices with 3D-touch.
 
-<a href="http://cs.ecs.baylor.edu/~zhunussov/gesurizer.gif"><img src="http://cs.ecs.baylor.edu/~zhunussov/demo5.gif" alt="iOSGesturizer" border="0" /></a>
+<a href="http://cs.ecs.baylor.edu/~zhunussov/gesturizer.gif"><img src="http://cs.ecs.baylor.edu/~zhunussov/gesturizer_small.gif" alt="iOSGesturizer" border="0" /></a>
 
 ## Features
 
@@ -36,13 +36,13 @@ The simplest way to use iOSGesturizer with your application is to add iOSGesturi
 ## Usage
 
 In AppDelegate class add the following line:
-```
+```swift
 var window: UIWindow? = GesturizerWindow()
 ```
 
 Also, in your main View Controller add the following lines:
 
-```
+```swift
 override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     let window = UIApplication.shared.keyWindow! as! GesturizerWindow
