@@ -1,0 +1,6 @@
+framework module iOSGesturizer {
+  umbrella header "iOSGesturizer-umbrella.h"
+
+  export *
+  module * { export * }
+}

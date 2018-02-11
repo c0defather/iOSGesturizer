@@ -1,0 +1,16 @@
+PODS:
+  - iOSGesturizer (1.0.0)
+
+DEPENDENCIES:
+  - iOSGesturizer (from `../../iOSGesturizer`)
+
+EXTERNAL SOURCES:
+  iOSGesturizer:
+    :path: ../../iOSGesturizer
+
+SPEC CHECKSUMS:
+  iOSGesturizer: 2c538a04e3401ea2c7720eb820c2a150dea356ca
+
+PODFILE CHECKSUM: f80389c4540e59ef158a55d002fb136faea78aad
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C719A6EB27D6C0109B6CE07C32CD894 /* GesturizerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED2E174DB1A5B0E91C7C13A40D33ADB /* GesturizerView.swift */; };
+		204B66A1C6A0388FAA9FD65970EAE977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		24A33D92526440C45FC84638301CD215 /* GesturizerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0B1FD795805D2996CBCF0772A76DE7 /* GesturizerWindow.swift */; };
+		2534BE734E494979FB2FA46FDC7CA5BA /* Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40024D05ED719350D7404792685B9785 /* Template.swift */; };
+		346319BF931720EDCF7B1533C685A0DE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3EB2491D4CA8FA2DB1F75D349CB264E4 /* Recognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BD4050CBA81D4709D9943787FC5CF3 /* Recognizer.swift */; };
+		3EC4BF505ACBD4BF9E255888CBA929BA /* Info.plist in Sources */ = {isa = PBXBuildFile; fileRef = 270997B473E5E2AD8CA78E298976AF75 /* Info.plist */; };
+		47032D3523F79EC0A7445A87DE1E1AC4 /* Pods-FoodTrackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E44473B15D281B5B1400088CB450A4 /* Pods-FoodTrackerTests-dummy.m */; };
+		50DA5E312C3F71E9F809AF7038877E03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		6D7821D8782DF6C0BD0C9AC974E7FAF2 /* Pods-FoodTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D30A9AD948648A13CE821AB9B03E99 /* Pods-FoodTracker-dummy.m */; };
+		74E99E837DD1A41AA9260051E08270EE /* Pods-FoodTrackerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 667BBAD386D9AA97332B9C5219C4BA58 /* Pods-FoodTrackerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		876E62AE2F6819D903C7B6C52C010721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E871ECDE0FB5906BA9C3C707EAAED353 /* Result.swift */; };
+		8C59758224CC3F5EDF0F0A12FD523D50 /* Rectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C94A3193CA82CCB7179273EA38607 /* Rectangle.swift */; };
+		8E9A72CFF45408355CACF5BAF96438D4 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993EF87DE227EB719336E2CA4F0DFCE3 /* Utils.swift */; };
+		8F708E548AF6B81A888076997AB19E1A /* Pods-FoodTracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E344A22B9C990F0BFDE371A1802C31F /* Pods-FoodTracker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A62AFAD5995AABCEBC4606D2DBFD777F /* Trigonometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = A837A8094FDB13D61C64345FE1594E92 /* Trigonometric.swift */; };
+		C55BED62E68B32A435E96893A308CCDE /* Dollar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA5CA37639DC3B5D9EE1A7C003EF0E /* Dollar.swift */; };
+		D13C529F3CD94058ABEDB630BA6079B3 /* iOSGesturizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D74A80E06A329CBE13C9FB7D5A2272 /* iOSGesturizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB2FD992E7DB83DC35262D9F9700C30F /* iOSGesturizer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B471088A32A137570FE06DE7109F7EC4 /* iOSGesturizer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE5A68FA4F361D5AE4980F75BB60BDF9 /* TemplateData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B355AAB35269F841069300C521A26A26 /* TemplateData.swift */; };
+		F65805583BDF6139452B19B520C475D2 /* iOSGesturizer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBCA15316F30DB5C250479DB55CDE518 /* iOSGesturizer-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9078D4645B3A0B6D081EBE71C66EBB76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA47CC19A3B971BAE4F2583724D5809D;
+			remoteInfo = iOSGesturizer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03D74A80E06A329CBE13C9FB7D5A2272 /* iOSGesturizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = iOSGesturizer.h; path = iOSGesturizer/iOSGesturizer.h; sourceTree = "<group>"; };
+		06F8CD79DC29DD0AACAB1C3CCA85B511 /* Pods-FoodTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07056CBEEA1842B05E0813130682CD4C /* Pods-FoodTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		0AE0221F82BE6B25348760F41241AAA1 /* Pods_FoodTrackerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodTrackerTests.framework; path = "Pods-FoodTrackerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1049D09B9B62739C5187F784B14930A5 /* Pods-FoodTrackerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoodTrackerTests.modulemap"; sourceTree = "<group>"; };
+		23BD4050CBA81D4709D9943787FC5CF3 /* Recognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Recognizer.swift; sourceTree = "<group>"; };
+		270997B473E5E2AD8CA78E298976AF75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = iOSGesturizer/Info.plist; sourceTree = "<group>"; };
+		2D753096E0C1A828F8A532EBFF1C65E3 /* iOSGesturizer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSGesturizer-prefix.pch"; sourceTree = "<group>"; };
+		2F289F5EEA1C71362078CB3B2DE048D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B52FD089BFBBA30248FC24AF3DC59DD /* Pods-FoodTrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodTrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B9C94A3193CA82CCB7179273EA38607 /* Rectangle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Rectangle.swift; sourceTree = "<group>"; };
+		3E0B1FD795805D2996CBCF0772A76DE7 /* GesturizerWindow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GesturizerWindow.swift; path = iOSGesturizer/GesturizerWindow.swift; sourceTree = "<group>"; };
+		40024D05ED719350D7404792685B9785 /* Template.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Template.swift; sourceTree = "<group>"; };
+		49B4A40A873941D612866C092165A7A3 /* Pods-FoodTracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoodTracker.modulemap"; sourceTree = "<group>"; };
+		4ED2E174DB1A5B0E91C7C13A40D33ADB /* GesturizerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GesturizerView.swift; path = iOSGesturizer/GesturizerView.swift; sourceTree = "<group>"; };
+		51839A51D20BCA32741455F878BCFD2E /* Pods-FoodTrackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodTrackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		667BBAD386D9AA97332B9C5219C4BA58 /* Pods-FoodTrackerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodTrackerTests-umbrella.h"; sourceTree = "<group>"; };
+		68FA5CA37639DC3B5D9EE1A7C003EF0E /* Dollar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Dollar.swift; sourceTree = "<group>"; };
+		6E927E7D6A16DA349CC7F8D3631403A5 /* Pods-FoodTrackerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTrackerTests-frameworks.sh"; sourceTree = "<group>"; };
+		7484B637F68DACC693C5E04C03995E53 /* Pods-FoodTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTracker.release.xcconfig"; sourceTree = "<group>"; };
+		79D30A9AD948648A13CE821AB9B03E99 /* Pods-FoodTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodTracker-dummy.m"; sourceTree = "<group>"; };
+		7AA615185434AB2B40C29EB13F6E3AD0 /* Pods-FoodTrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		931726BD08C7266908A5803749D8B59F /* iOSGesturizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSGesturizer.framework; path = iOSGesturizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94BD2E10A252C7D048FF08F9ACC70F04 /* Pods-FoodTrackerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTrackerTests-resources.sh"; sourceTree = "<group>"; };
+		993EF87DE227EB719336E2CA4F0DFCE3 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		9E344A22B9C990F0BFDE371A1802C31F /* Pods-FoodTracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodTracker-umbrella.h"; sourceTree = "<group>"; };
+		A837A8094FDB13D61C64345FE1594E92 /* Trigonometric.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Trigonometric.swift; sourceTree = "<group>"; };
+		B355AAB35269F841069300C521A26A26 /* TemplateData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TemplateData.swift; sourceTree = "<group>"; };
+		B471088A32A137570FE06DE7109F7EC4 /* iOSGesturizer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iOSGesturizer-umbrella.h"; sourceTree = "<group>"; };
+		B5CC2BF478F371C60DEB839DACA99B5A /* Pods-FoodTrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodTrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5D1A27153EA8C4BCAA40BEE37EA94A4 /* Pods-FoodTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTracker-resources.sh"; sourceTree = "<group>"; };
+		C2A890E6A0DA064E976317FE5A82B796 /* Pods-FoodTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		D466C1A993F1842D6755026F5050E7E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D76562E6413EBCB0C98A30C615D700C4 /* Pods-FoodTracker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodTracker-frameworks.sh"; sourceTree = "<group>"; };
+		E39484D3B184FA01DB18AEC212D0945D /* iOSGesturizer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = iOSGesturizer.modulemap; sourceTree = "<group>"; };
+		E59BFC7AEE592C6BD400EF34C3856533 /* iOSGesturizer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = iOSGesturizer.xcconfig; sourceTree = "<group>"; };
+		E871ECDE0FB5906BA9C3C707EAAED353 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		E9E44473B15D281B5B1400088CB450A4 /* Pods-FoodTrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodTrackerTests-dummy.m"; sourceTree = "<group>"; };
+		EBCA15316F30DB5C250479DB55CDE518 /* iOSGesturizer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iOSGesturizer-dummy.m"; sourceTree = "<group>"; };
+		ECFF6BB78B78E897B1E149210335D8A1 /* Pods_FoodTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodTracker.framework; path = "Pods-FoodTracker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2E9F9DD8F1ED26BCC450C4750ED241D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C8837C14D155588652DEE824445E7E /* iOSGesturizer.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = iOSGesturizer.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7898674CCCAC956FD3A417F698B0EED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				204B66A1C6A0388FAA9FD65970EAE977 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		961CE3063AF3E00D4C24F409EC1BDBDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				346319BF931720EDCF7B1533C685A0DE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F950D54BA66D9791E07FEB1FD0DA30B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DA5E312C3F71E9F809AF7038877E03 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0792568E6D7A5F6A462E2C8D226BB2BC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE5440797C69253126B6808FAC8BB34C /* iOSGesturizer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2B4FEDF5ED6067719977FEFE749FD511 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F6C8837C14D155588652DEE824445E7E /* iOSGesturizer.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2F07AE736431EA70B51546AEBD98CA4E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B59BB99D64766AAAAD062040270DAC8 /* Pods-FoodTracker */,
+				CD61BA12BECBBBDC8185306D0A33A48B /* Pods-FoodTrackerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0792568E6D7A5F6A462E2C8D226BB2BC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				95DD7C64F2F62A6D7A57E5C68803E87B /* Products */,
+				2F07AE736431EA70B51546AEBD98CA4E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80ADB767D185330CA2FF8734A19F4F42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2E9F9DD8F1ED26BCC450C4750ED241D /* Info.plist */,
+				E39484D3B184FA01DB18AEC212D0945D /* iOSGesturizer.modulemap */,
+				E59BFC7AEE592C6BD400EF34C3856533 /* iOSGesturizer.xcconfig */,
+				EBCA15316F30DB5C250479DB55CDE518 /* iOSGesturizer-dummy.m */,
+				2D753096E0C1A828F8A532EBFF1C65E3 /* iOSGesturizer-prefix.pch */,
+				B471088A32A137570FE06DE7109F7EC4 /* iOSGesturizer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Example/FoodTracker/Pods/Target Support Files/iOSGesturizer";
+			sourceTree = "<group>";
+		};
+		95DD7C64F2F62A6D7A57E5C68803E87B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				931726BD08C7266908A5803749D8B59F /* iOSGesturizer.framework */,
+				ECFF6BB78B78E897B1E149210335D8A1 /* Pods_FoodTracker.framework */,
+				0AE0221F82BE6B25348760F41241AAA1 /* Pods_FoodTrackerTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B59BB99D64766AAAAD062040270DAC8 /* Pods-FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				2F289F5EEA1C71362078CB3B2DE048D8 /* Info.plist */,
+				49B4A40A873941D612866C092165A7A3 /* Pods-FoodTracker.modulemap */,
+				06F8CD79DC29DD0AACAB1C3CCA85B511 /* Pods-FoodTracker-acknowledgements.markdown */,
+				C2A890E6A0DA064E976317FE5A82B796 /* Pods-FoodTracker-acknowledgements.plist */,
+				79D30A9AD948648A13CE821AB9B03E99 /* Pods-FoodTracker-dummy.m */,
+				D76562E6413EBCB0C98A30C615D700C4 /* Pods-FoodTracker-frameworks.sh */,
+				B5D1A27153EA8C4BCAA40BEE37EA94A4 /* Pods-FoodTracker-resources.sh */,
+				9E344A22B9C990F0BFDE371A1802C31F /* Pods-FoodTracker-umbrella.h */,
+				07056CBEEA1842B05E0813130682CD4C /* Pods-FoodTracker.debug.xcconfig */,
+				7484B637F68DACC693C5E04C03995E53 /* Pods-FoodTracker.release.xcconfig */,
+			);
+			name = "Pods-FoodTracker";
+			path = "Target Support Files/Pods-FoodTracker";
+			sourceTree = "<group>";
+		};
+		AC3337ABE40ACB18157E4B09E6FD0CDC /* GestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				68FA5CA37639DC3B5D9EE1A7C003EF0E /* Dollar.swift */,
+				23BD4050CBA81D4709D9943787FC5CF3 /* Recognizer.swift */,
+				3B9C94A3193CA82CCB7179273EA38607 /* Rectangle.swift */,
+				E871ECDE0FB5906BA9C3C707EAAED353 /* Result.swift */,
+				40024D05ED719350D7404792685B9785 /* Template.swift */,
+				B355AAB35269F841069300C521A26A26 /* TemplateData.swift */,
+				A837A8094FDB13D61C64345FE1594E92 /* Trigonometric.swift */,
+				993EF87DE227EB719336E2CA4F0DFCE3 /* Utils.swift */,
+			);
+			name = GestureRecognizer;
+			path = iOSGesturizer/GestureRecognizer;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD61BA12BECBBBDC8185306D0A33A48B /* Pods-FoodTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D466C1A993F1842D6755026F5050E7E4 /* Info.plist */,
+				1049D09B9B62739C5187F784B14930A5 /* Pods-FoodTrackerTests.modulemap */,
+				51839A51D20BCA32741455F878BCFD2E /* Pods-FoodTrackerTests-acknowledgements.markdown */,
+				3B52FD089BFBBA30248FC24AF3DC59DD /* Pods-FoodTrackerTests-acknowledgements.plist */,
+				E9E44473B15D281B5B1400088CB450A4 /* Pods-FoodTrackerTests-dummy.m */,
+				6E927E7D6A16DA349CC7F8D3631403A5 /* Pods-FoodTrackerTests-frameworks.sh */,
+				94BD2E10A252C7D048FF08F9ACC70F04 /* Pods-FoodTrackerTests-resources.sh */,
+				667BBAD386D9AA97332B9C5219C4BA58 /* Pods-FoodTrackerTests-umbrella.h */,
+				B5CC2BF478F371C60DEB839DACA99B5A /* Pods-FoodTrackerTests.debug.xcconfig */,
+				7AA615185434AB2B40C29EB13F6E3AD0 /* Pods-FoodTrackerTests.release.xcconfig */,
+			);
+			name = "Pods-FoodTrackerTests";
+			path = "Target Support Files/Pods-FoodTrackerTests";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		EE5440797C69253126B6808FAC8BB34C /* iOSGesturizer */ = {
+			isa = PBXGroup;
+			children = (
+				4ED2E174DB1A5B0E91C7C13A40D33ADB /* GesturizerView.swift */,
+				3E0B1FD795805D2996CBCF0772A76DE7 /* GesturizerWindow.swift */,
+				270997B473E5E2AD8CA78E298976AF75 /* Info.plist */,
+				03D74A80E06A329CBE13C9FB7D5A2272 /* iOSGesturizer.h */,
+				AC3337ABE40ACB18157E4B09E6FD0CDC /* GestureRecognizer */,
+				2B4FEDF5ED6067719977FEFE749FD511 /* Pod */,
+				80ADB767D185330CA2FF8734A19F4F42 /* Support Files */,
+			);
+			name = iOSGesturizer;
+			path = ../../../iOSGesturizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1000AAA757E6CB77D9240741212F2D12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB2FD992E7DB83DC35262D9F9700C30F /* iOSGesturizer-umbrella.h in Headers */,
+				D13C529F3CD94058ABEDB630BA6079B3 /* iOSGesturizer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27A4B88D4D0A3AE7518649A2F213C5AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F708E548AF6B81A888076997AB19E1A /* Pods-FoodTracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CA6E2FC18B266DD043221904B3E9513 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74E99E837DD1A41AA9260051E08270EE /* Pods-FoodTrackerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DD346BF2CFDDB5312949F8F8860A4BA /* Pods-FoodTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 865728C8167CFD72A7525D4680A2808A /* Build configuration list for PBXNativeTarget "Pods-FoodTracker" */;
+			buildPhases = (
+				94F49F2532C83F85FA530284AF291CEB /* Sources */,
+				F950D54BA66D9791E07FEB1FD0DA30B9 /* Frameworks */,
+				27A4B88D4D0A3AE7518649A2F213C5AC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6DCBD484798E31DFCB72EBFE400F8B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-FoodTracker";
+			productName = "Pods-FoodTracker";
+			productReference = ECFF6BB78B78E897B1E149210335D8A1 /* Pods_FoodTracker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8FB10EC9890057E39BD3AE8A790C53B /* Pods-FoodTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16D651582F36E882606D2A3156ABBA16 /* Build configuration list for PBXNativeTarget "Pods-FoodTrackerTests" */;
+			buildPhases = (
+				7EDCC18A2F3762350DE61D384D98940E /* Sources */,
+				7898674CCCAC956FD3A417F698B0EED2 /* Frameworks */,
+				8CA6E2FC18B266DD043221904B3E9513 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-FoodTrackerTests";
+			productName = "Pods-FoodTrackerTests";
+			productReference = 0AE0221F82BE6B25348760F41241AAA1 /* Pods_FoodTrackerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CA47CC19A3B971BAE4F2583724D5809D /* iOSGesturizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 549E418A38F15969D331D2EB419C329D /* Build configuration list for PBXNativeTarget "iOSGesturizer" */;
+			buildPhases = (
+				A7EA7A566B96DBC0A01A866FED8A1AC5 /* Sources */,
+				961CE3063AF3E00D4C24F409EC1BDBDE /* Frameworks */,
+				1000AAA757E6CB77D9240741212F2D12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSGesturizer;
+			productName = iOSGesturizer;
+			productReference = 931726BD08C7266908A5803749D8B59F /* iOSGesturizer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 95DD7C64F2F62A6D7A57E5C68803E87B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA47CC19A3B971BAE4F2583724D5809D /* iOSGesturizer */,
+				5DD346BF2CFDDB5312949F8F8860A4BA /* Pods-FoodTracker */,
+				C8FB10EC9890057E39BD3AE8A790C53B /* Pods-FoodTrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EDCC18A2F3762350DE61D384D98940E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47032D3523F79EC0A7445A87DE1E1AC4 /* Pods-FoodTrackerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94F49F2532C83F85FA530284AF291CEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7821D8782DF6C0BD0C9AC974E7FAF2 /* Pods-FoodTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7EA7A566B96DBC0A01A866FED8A1AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C55BED62E68B32A435E96893A308CCDE /* Dollar.swift in Sources */,
+				1C719A6EB27D6C0109B6CE07C32CD894 /* GesturizerView.swift in Sources */,
+				24A33D92526440C45FC84638301CD215 /* GesturizerWindow.swift in Sources */,
+				3EC4BF505ACBD4BF9E255888CBA929BA /* Info.plist in Sources */,
+				F65805583BDF6139452B19B520C475D2 /* iOSGesturizer-dummy.m in Sources */,
+				3EB2491D4CA8FA2DB1F75D349CB264E4 /* Recognizer.swift in Sources */,
+				8C59758224CC3F5EDF0F0A12FD523D50 /* Rectangle.swift in Sources */,
+				876E62AE2F6819D903C7B6C52C010721 /* Result.swift in Sources */,
+				2534BE734E494979FB2FA46FDC7CA5BA /* Template.swift in Sources */,
+				EE5A68FA4F361D5AE4980F75BB60BDF9 /* TemplateData.swift in Sources */,
+				A62AFAD5995AABCEBC4606D2DBFD777F /* Trigonometric.swift in Sources */,
+				8E9A72CFF45408355CACF5BAF96438D4 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6DCBD484798E31DFCB72EBFE400F8B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSGesturizer;
+			target = CA47CC19A3B971BAE4F2583724D5809D /* iOSGesturizer */;
+			targetProxy = 9078D4645B3A0B6D081EBE71C66EBB76 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13A95306D85E4471AB6BE665B012E60A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5324F23B44BA097A28F97EA329A560B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59BFC7AEE592C6BD400EF34C3856533 /* iOSGesturizer.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSGesturizer/iOSGesturizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSGesturizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSGesturizer/iOSGesturizer.modulemap";
+				PRODUCT_NAME = iOSGesturizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		54BC4B69251D517390FD7E0A0D766960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07056CBEEA1842B05E0813130682CD4C /* Pods-FoodTracker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		776AE8C99D183F716DBADEFE66AA7291 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5CC2BF478F371C60DEB839DACA99B5A /* Pods-FoodTrackerTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTrackerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		863B628697D61B9BD3FBBEFD5E354251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7484B637F68DACC693C5E04C03995E53 /* Pods-FoodTracker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTracker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTracker/Pods-FoodTracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTracker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E8333274F4AB64785B04AB5B2A37231 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C447134552D09C9FEDBF740DB86F286E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59BFC7AEE592C6BD400EF34C3856533 /* iOSGesturizer.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/iOSGesturizer/iOSGesturizer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/iOSGesturizer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/iOSGesturizer/iOSGesturizer.modulemap";
+				PRODUCT_NAME = iOSGesturizer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DDDF14FFCF70379E6581694D5B095C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AA615185434AB2B40C29EB13F6E3AD0 /* Pods-FoodTrackerTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodTrackerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodTrackerTests/Pods-FoodTrackerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodTrackerTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		16D651582F36E882606D2A3156ABBA16 /* Build configuration list for PBXNativeTarget "Pods-FoodTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				776AE8C99D183F716DBADEFE66AA7291 /* Debug */,
+				DDDF14FFCF70379E6581694D5B095C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13A95306D85E4471AB6BE665B012E60A /* Debug */,
+				8E8333274F4AB64785B04AB5B2A37231 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		549E418A38F15969D331D2EB419C329D /* Build configuration list for PBXNativeTarget "iOSGesturizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5324F23B44BA097A28F97EA329A560B5 /* Debug */,
+				C447134552D09C9FEDBF740DB86F286E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		865728C8167CFD72A7525D4680A2808A /* Build configuration list for PBXNativeTarget "Pods-FoodTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BC4B69251D517390FD7E0A0D766960 /* Debug */,
+				863B628697D61B9BD3FBBEFD5E354251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
