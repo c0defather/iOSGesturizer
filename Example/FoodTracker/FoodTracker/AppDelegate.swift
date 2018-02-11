@@ -12,7 +12,7 @@ import iOSGesturizer
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow? = GesturizerWindow() // changed from 'var window: UIWindow?'
+    var window: UIWindow? = GesturizerWindow()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {

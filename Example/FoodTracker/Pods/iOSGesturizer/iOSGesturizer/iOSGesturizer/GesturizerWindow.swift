@@ -13,7 +13,6 @@ public class GesturizerWindow: UIWindow {
     
     public func setGestureView(view: GesturizerView) {
         self.view = view
-        self.addSubview(view)
     }
     
     override public func sendEvent(_ event: UIEvent) {
