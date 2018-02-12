@@ -16,7 +16,9 @@ Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke ge
 - Requires iOS 11 or later
 - Requires 3D-touch
 
-## Demo Project
+## Demo
+
+Video demo is available on <a href="https://www.youtube.com/watch?v=RUoJeZfL5bw">YouTube.</a>
 
 Build and run the <i>FoodTrack</i> project in Xcode. Basically, we took an app provided in Apple's tutorials and applied iOSGesturizer to it.
 
