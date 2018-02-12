@@ -54,7 +54,6 @@ override func viewDidAppear(_ animated: Bool) {
 	// do whatever you need
     }
     window.setGestureView(view: view)
-    window.addSubview(view)
 }
 ```
 
