@@ -66,8 +66,12 @@ public class GesturizerView: UIImageView {
                     userPathForce.removeAll()
                     dollar.clear()
                     forceTouch = true
-                    let generator = UIImpactFeedbackGenerator(style: .medium)
-                    generator.impactOccurred()
+                    if #available(iOS 10.0, *) {
+                        let generator = UIImpactFeedbackGenerator(style: .medium)
+                        generator.impactOccurred()
+                    } else {
+                        // Fallback on earlier versions
+                    }
                 }
                 dollar.addPoint(x: Int(currentPoint.x), y: Int(currentPoint.y))
                 if (lastPointForce == CGPoint.zero){
