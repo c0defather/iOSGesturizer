@@ -28,7 +28,6 @@ Build and run the <i>FoodTrack</i> project in Xcode. Basically, we took an app p
 
 Simply add the following line to your <code>Podfile</code>:
 
-	platform :ios, '11.0'
 	pod 'iOSGesturizer'
 	
 ### The Old School Way
