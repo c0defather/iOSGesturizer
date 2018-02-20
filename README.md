@@ -8,13 +8,13 @@ Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke ge
 - Customizable gestures.
 - Gestures can be executed anywhere on the screen.
 - Gesture mode is activated when a user applies additional pressure to the screen.
-- Training mode is activated when a user 'hesitates'.
 - Supports training mode to learn gestures (based on <a href="http://www.olivierbau.com/octopocus.php">OctoPocus</a>).
+- Training mode is activated when a user 'hesitates'.
 
 ## Requirements
 
-- Requires iOS 11 or later
-- Requires 3D-touch
+- iOS 9 or later
+- iPhone 6s or later (3D-touch)
 
 ## Demo
 
