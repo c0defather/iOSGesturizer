@@ -22,18 +22,6 @@ Video demo is available on <a href="https://www.youtube.com/watch?v=RUoJeZfL5bw"
 
 Build and run the <i>FoodTrack</i> project in Xcode. Basically, we took an app provided in Apple's tutorials and applied iOSGesturizer to it.
 
-## Installation
-
-### The Pod Way
-
-Simply add the following line to your <code>Podfile</code>:
-
-	pod 'iOSGesturizer'
-	
-### The Old School Way
-
-The simplest way to use iOSGesturizer with your application is to add iOSGesturizer folder as a framework in Builds Settings in your XCode project.
-
 ## Usage
 
 In AppDelegate class add the following line:
@@ -49,12 +37,24 @@ override func viewDidAppear(_ animated: Bool) {
     let window = UIApplication.shared.keyWindow! as! GesturizerWindow
     let view = GesturizerView()
     view.gestureHandler = {index in
-        // index is the index of a gesture that was recognizer
-	// do whatever you need
+        // write a command related to a gesture with given index
+	// i.e. do whatever you need
     }
     window.setGestureView(view: view)
 }
 ```
+
+## Installation
+
+### The Pod Way
+
+Simply add the following line to your <code>Podfile</code>:
+
+	pod 'iOSGesturizer'
+	
+### The Old School Way
+
+Another way to use iOSGesturizer with your application is to add iOSGesturizer folder as a framework in Builds Settings in your XCode project.
 
 ## Customization
 
