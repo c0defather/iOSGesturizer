@@ -1,15 +1,15 @@
 # iOSGesturizer
-Introducing <b>iOSGesturizer - </b> iOS library that easily enables unistroke gesture interaction for any apps running on iOS devices with 3D-touch.
+Introducing <b>iOSGesturizer - </b> the framework that easily enables unistroke gesture interaction for any apps running on iOS devices with 3D-touch.
 
 <a href="http://cs.ecs.baylor.edu/~zhunussov/gesturizer.gif"><img src="http://cs.ecs.baylor.edu/~zhunussov/gesturizer_small_emulator.gif" alt="iOSGesturizer" border="0" /></a>
 
 ## Features
 
-- Customizable gestures.
-- Gestures can be executed anywhere on the screen.
+- Gestures can be executed anywhere on the screen without conflicting with existing UI views.
+- Gestures are customizable - simply provide your gesture (x,y) points.
 - Gesture mode is activated when a user applies additional pressure to the screen.
 - Supports training mode to learn gestures (based on <a href="http://www.olivierbau.com/octopocus.php">OctoPocus</a>).
-- Training mode is activated when a user 'hesitates'.
+- Training mode is activated when a user 'hesitates', i.e. after 1 second.
 
 ## Requirements
 
