@@ -60,8 +60,9 @@ override func viewDidAppear(_ animated: Bool) {
 
 For customization of gestures provide your data points into TemplateData class.
 
+## Acknowledgements
+Thanks to <a href="https://nobleapplications.com">Noble Applications</a> for provided resources and help in development of the framework.
 
-	
 ## License
 
 ```
